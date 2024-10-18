@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-button {
+    padding: 10px 20px; /* Atur padding sesuai keinginan */
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Warna hijau */
+    color: white;
+    margin: 5px;
+}
+
