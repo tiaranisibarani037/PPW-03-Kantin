@@ -11,6 +11,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('/adminpage', function () {
+    return view('admin');
+});
+
+Route::get('/createfood', function () {
+    return view('createfood');
+})->name('createfood');
+
 Route::get('/login', function(){
     return view('loginPage');
 });
@@ -24,3 +33,4 @@ Route::post('postlogin', 'App\Http\Controllers\LoginController@postlogin')->name
 Route::get('logout', 'App\Http\Controllers\LoginController@logout')->name('logout');
 
 Route::get('/home', [homeController::class, 'index']);
+
